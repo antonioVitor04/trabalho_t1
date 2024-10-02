@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        #cabeçalho {
+            text-align: center;
+            padding: 20px;
+            color: black
+        }
+
+        .principal {
+            text-align: center;
+        }
+
+        .livro {
+            border: 2px solid black;
+            border-radius: 18px;
+            margin: 20px 0px; 
+            height: 370px; 
+            width: 280px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        .titulo > h1{
+            display:inline-block;
+            border-bottom: 3px solid black;
+        }
+
+        .livro img {
+            border-radius: 18px;
+            height: 200px; 
+            width: 200px;
+            margin-bottom: 15px;
+        }
+
+        .livro p {
+            margin: 10px;
+            font-size: 1rem;
+            display: inline-block;
+            border-bottom: black solid 1px;
+        }
+
+        @media (max-width: 767px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header id="cabeçalho">
+        <div class="titulo col-12">
+            <h1>JOGOS</h1>
+        </div>
+        
+    </header>
+<main>
+    <div class="principal container-fluid container-sm">
+        <div class="row justify-content-around">
+            <div class="livro col-md-6 col-sm-12">
+                <img src="images/elden ring.jpeg" alt="Título do Livro">
+                <p><strong>Elden ring</strong><br>Myazaki</p>
+            </div>
+
+            <div class="livro col-md-6 col-sm-12">
+                <img src="images/cod.jpeg" alt="Título do Livro">
+                <p><strong>COD</strong><br>Brian Bloom Justin Harris</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
